@@ -105,6 +105,7 @@ public class FirstFragment extends Fragment {
         public void onBindViewHolder(ParkViewHolder holder, int position) {
             String image = images.get(position);
             holder.imageView.setImageURI(image);
+            holder.imageView.setLegacyVisibilityHandlingEnabled(true);
         }
 
         @Override
